@@ -45,7 +45,6 @@ const Header = () => (
 			<SocialIcons href="https://www.linkedin.com/in/meraj-vindira-169193197/">
 				<AiFillLinkedin size="3rem" />
 			</SocialIcons>
-			<SocialIcons href="">{/* <AiFillGithub size="3rem" /> */}</SocialIcons>
 		</Div3>
 	</Container>
 );

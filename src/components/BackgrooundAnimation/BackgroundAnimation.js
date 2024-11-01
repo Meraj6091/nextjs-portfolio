@@ -7,9 +7,28 @@ const BackgroundAnimation = () => (
 			viewBox="0 0 602 602"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
+			style={{
+				animation: "rotate 30s linear infinite", // Slow rotation for the entire SVG
+			}}
 		>
+			<defs>
+				{/* Define gradient colors for smoother transitions */}
+				<radialGradient id="paint0_radial" cx="0" cy="0" r="1">
+					<stop offset="0%" stopColor="#34D399" />
+					<stop offset="100%" stopColor="#059669" />
+				</radialGradient>
+				<radialGradient id="paint1_radial" cx="0" cy="0" r="1">
+					<stop offset="0%" stopColor="#60A5FA" />
+					<stop offset="100%" stopColor="#3B82F6" />
+				</radialGradient>
+				<radialGradient id="paint2_radial" cx="0" cy="0" r="1">
+					<stop offset="0%" stopColor="#F472B6" />
+					<stop offset="100%" stopColor="#EC4899" />
+				</radialGradient>
+			</defs>
+
 			<g opacity="0.15">
-				{/* Modify the path colors */}
+				{/* Original paths */}
 				<path
 					fillRule="evenodd"
 					clipRule="evenodd"
@@ -17,44 +36,86 @@ const BackgroundAnimation = () => (
 					stroke="url(#paint0_radial)"
 					id="path_0"
 				/>
-				{/* Modify the path colors */}
 				<path
 					d="M514.563 201.337C522.426 193.474 522.426 180.725 514.563 172.862L429.138 87.437C421.275 79.5738 408.526 79.5739 400.663 87.437L358.098 130.002L301.148 73.0516L343.713 30.4869C383.028 -8.82896 446.772 -8.82896 486.088 30.4869L571.513 115.912C610.829 155.228 610.829 218.972 571.513 258.287L357.802 471.999L300.852 415.049L514.563 201.337Z"
 					stroke="url(#paint1_radial)"
 					id="path_1"
 				/>
-				{/* Modify the path colors */}
 				<path
 					d="M243.901 471.999L201.337 514.563C193.474 522.426 180.725 522.426 172.862 514.563L87.437 429.138C79.5739 421.275 79.5739 408.526 87.437 400.663L301.148 186.952L244.198 130.002L30.4869 343.713C-8.82897 383.028 -8.82897 446.772 30.4869 486.088L115.912 571.513C155.228 610.829 218.972 610.829 258.287 571.513L300.852 528.949L243.901 471.999Z"
 					stroke="url(#paint2_radial)"
 					id="path_2"
 				/>
+
+				{/* Additional paths with slight variations */}
+				<path
+					d="M100 400L300 200"
+					stroke="url(#paint1_radial)"
+					strokeWidth="1.5"
+					id="path_3"
+				>
+					<animateMotion dur="8s" repeatCount="indefinite" rotate="auto">
+						<mpath xlinkHref="#path_1" />
+					</animateMotion>
+				</path>
+				<path
+					d="M150 450L450 150"
+					stroke="url(#paint0_radial)"
+					strokeWidth="1.2"
+					id="path_4"
+				>
+					<animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+						<mpath xlinkHref="#path_0" />
+					</animateMotion>
+				</path>
+				<path
+					d="M200 300L500 100"
+					stroke="url(#paint2_radial)"
+					strokeWidth="1.3"
+					id="path_5"
+				>
+					<animateMotion dur="7s" repeatCount="indefinite" rotate="auto">
+						<mpath xlinkHref="#path_2" />
+					</animateMotion>
+				</path>
 			</g>
-			{/* Modify the ellipse fill color */}
+
+			{/* Animated Ellipse with scaling and opacity changes */}
 			<ellipse
 				cx="295.027"
 				cy="193.118"
 				transform="translate(-295.027 -193.118)"
 				rx="1.07306"
 				ry="1.07433"
-				fill="green"
+				fill="url(#paint0_radial)"
 			>
-				{/* Modify animation duration */}
-				<animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
+				<animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
 					<mpath xlinkHref="#path_2" />
 				</animateMotion>
+				<animate
+					attributeName="opacity"
+					values="1;0.5;1"
+					dur="4s"
+					repeatCount="indefinite"
+				/>
+				<animateTransform
+					attributeName="transform"
+					type="scale"
+					values="1;1.5;1"
+					dur="4s"
+					repeatCount="indefinite"
+				/>
 			</ellipse>
-			{/* Modify the path color */}
-			<path
-				d="M294.685 193.474L268.932 219.258"
-				transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)"
-				stroke="blue"
-			>
-				{/* Modify animation duration */}
-				<animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
-					<mpath xlinkHref="#path_2" />
-				</animateMotion>
-			</path>
+
+			{/* Define CSS for SVG rotation */}
+			<style>
+				{`
+          @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}
+			</style>
 		</svg>
 	</div>
 );

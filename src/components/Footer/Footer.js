@@ -20,7 +20,7 @@ const Footer = () => {
 			<LinkList>
 				<LinkColumn>
 					<LinkTitle>CV</LinkTitle>
-					<LinkItem href="Meraj Vindira - CV.pdf" download>
+					<LinkItem href="Meraj Pathiranage - Software Engineer.pdf" download>
 						Download My CV
 					</LinkItem>
 				</LinkColumn>

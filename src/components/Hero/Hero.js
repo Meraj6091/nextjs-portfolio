@@ -16,6 +16,7 @@ const Hero = (props) => (
 					Welcome To <br />
 					My Portfolio
 				</SectionTitle>
+				<SectionText>I'm a full stack developer</SectionText>
 			</LeftSection>
 		</Section>
 	</>

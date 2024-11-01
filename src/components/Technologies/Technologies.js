@@ -1,6 +1,9 @@
 import React from "react";
 import { DiFirebase, DiReact, DiZend } from "react-icons/di";
 import { BsCodeSlash } from "react-icons/bs";
+import { FaLaptopCode } from "react-icons/fa";
+import { SiStrapi } from "react-icons/si";
+
 import {
 	Section,
 	SectionDivider,
@@ -20,8 +23,8 @@ const Technologies = () => (
 		<SectionDivider divider />
 		<SectionTitle>Technologies</SectionTitle>
 		<SectionText>
-			I've worked with a range a technologies in the web development and Mobile
-			development world. From Back-end To Design
+			I've worked with a range of technologies in the web development and Mobile
+			development world, From Back-end To Design!
 		</SectionText>
 		<List>
 			<ListItem>
@@ -93,6 +96,38 @@ const Technologies = () => (
 						<br />
 						Firebase
 						<br />
+					</ListParagraph>
+				</ListContainer>
+			</ListItem>
+			<ListItem>
+				<picture>
+					<FaLaptopCode size="3rem" />
+				</picture>
+				<ListContainer>
+					<ListTitle>OS</ListTitle>
+					<ListParagraph>
+						Experience with
+						<br />
+						Windows
+						<br />
+						Linux
+					</ListParagraph>
+				</ListContainer>
+			</ListItem>
+			<ListItem>
+				<picture>
+					<SiStrapi size="2.5rem" />
+				</picture>
+				<ListContainer>
+					<ListTitle>APIs</ListTitle>
+					<ListParagraph>
+						Experience with
+						<br />
+						Google Maps APi
+						<br />
+						Mapbox
+						<br />
+						Slack
 					</ListParagraph>
 				</ListContainer>
 			</ListItem>

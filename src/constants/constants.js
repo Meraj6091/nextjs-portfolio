@@ -16,7 +16,7 @@ export const projects = [
 		description: `A Hybrid Approach to Detect and Prevent SQL Injection Attacks on Server-Side Applications. A security system to prevent hackers from inserting malicious queries using machine learning combining with RNN, CNN with Google BERT.`,
 		image: "/images/2.png",
 		tags: [
-			"React (TypeScript) , MySQL ,Flask ,TensorFlow , Keras , NLP , Google Cola",
+			"React (TypeScript) , MySQL ,Flask ,TensorFlow , Keras , NLP , Google Colab",
 		],
 		source: "https://www.youtube.com/watch?v=-VtPyXri30g",
 		visit: "https://github.com/Meraj6091/Final_Year_Project",
@@ -25,7 +25,7 @@ export const projects = [
 	{
 		title: "BRIDGE",
 		description:
-			"An enterprise application for Shipping Management and a Tool to keep track of all shipments and to produce reports on monthly shipments.",
+			"An enterprise application for Shipping Management and a tool to keep track of all shipments and to produce reports on monthly shipments.",
 		image: "/images/4.jpg",
 		tags: ["React , Node (TypeScript) , Redux , Saga , Redis, PostgreSQL"],
 		source: "https://www.youtube.com/watch?v=xhR7inb1Dd0&t=12s",
@@ -46,10 +46,10 @@ export const projects = [
 	{
 		title: "SCOOTIX",
 		description:
-			"A Delivery Management Platform. A Mobile application to deliver goods into customers combining with a Web Application to Track and Manage their behaviors.",
+			"A Delivery Management Platform. A Mobile application to deliver goods into customers combining with a Web Application to track and manage their behaviors.",
 		image: "/images/5.png",
 		tags: [
-			"React Native , Node (TypeScript) , Redux , Saga , Redis , PostgreSQL",
+			"React Native , Node (TypeScript) , Redux , Saga , Redis , MongoDB , Socket.io , RabbitMQ",
 		],
 		visit: "https://scootix.com.my/",
 		id: 4,
@@ -102,10 +102,18 @@ export const projects = [
 		title: "Real Time Chat Application",
 		description: "Real Time Chat Application Using Socket.IO.",
 		image: "/images/11.jpg",
-		tags: ["socket-io , typescript, reactjs , heruko"],
+		tags: ["Socket-io , Typescript, Reactjs , Heruko"],
 		id: 4,
 		visit: "https://github.com/Meraj6091/Real-Time-Chat-Application",
 		source: "https://socket.io/",
+	},
+	{
+		title: "OpenAI-Web",
+		description: "Fully Responsive Modern UI/UX Website in React JS.",
+		image: "/images/13.png",
+		tags: ["Reactjs , UIUX , Media Queries"],
+		id: 4,
+		visit: "https://github.com/Meraj6091/OpenAI-Web",
 	},
 ];
 

@@ -66,8 +66,16 @@ const Timeline = () => {
 	return (
 		<Section id="about">
 			<SectionTitle>About Me</SectionTitle>
+			<SectionTitle>
+				<img
+					src="/images/me.png"
+					width={180}
+					height={180}
+					alt="Picture of the author"
+				/>
+			</SectionTitle>
 			<SectionText>
-				I am a highly motivated individual with one year of industrial
+				I am a highly motivated individual with 2+ years of industrial
 				experience as a Full Stack Developer and enthusiasm to learn new skills
 				to contribute to the success of the organizational objectives
 				effectively and efficiently while achieving my personal goals.
